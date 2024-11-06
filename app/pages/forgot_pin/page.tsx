@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import { useRouter } from "next/navigation";
 
-export default function Login() {
+export default function ForgotPin() {
   const router = useRouter();
 
   return (
@@ -36,7 +36,7 @@ export default function Login() {
           <div className="p-8 md:w-1/2">
             <div className="flex flex-col items-center">
               <img src="/logo.jpeg" alt="Logo" className="w-32 mb-4" />
-              <h2 className="text-xl text-black font-semibold mb-6">Login</h2>
+              <h2 className="text-xl text-black font-semibold mb-6">Forgot Password</h2>
             </div>
             <form className="space-y-4">
               <div>
@@ -53,31 +53,12 @@ export default function Login() {
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-              <div>
-                <label className="block text-gray-600 mb-2">Password</label>
-                <input
-                  type="password"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div className="flex items-center justify-between mt-4">
-                <label className="inline-flex items-center">
-                  <input type="checkbox" className="form-checkbox h-4 w-4 text-blue-600" />
-                  <span className="ml-2 text-gray-600">Remember Me</span>
-                </label>
-                <a href="/pages/forgot_pin" className="text-blue-500 text-sm">Forgot Password?</a>
-              </div>
               <button
-                onClick={() => router.push("/pages/signup")}
                 type="submit"
                 className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mt-4"
               >
-                Login
+                SENT OTP TO EMAIL
               </button>
-              <div className="flex space-x-4 mt-6">
-                <button className="w-1/2 py-2 bg-gray-100 text-blue-500 rounded-md hover:bg-gray-200">Punch In</button>
-                <button className="w-1/2 py-2 bg-gray-100 text-blue-500 rounded-md hover:bg-gray-200">Punch Out</button>
-              </div>
             </form>
           </div>
         </div>

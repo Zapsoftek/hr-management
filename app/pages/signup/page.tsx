@@ -10,14 +10,9 @@ export default function Signup() {
         <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row overflow-hidden w-full max-w-5xl mx-4 md:mx-0">
           
           {/* Left Section */}
-          <div className="bg-blue-50 p-10 md:w-1/2 flex flex-col justify-center">
-            <h1 className="text-3xl font-bold mb-4 text-blue-800">Step into the Future of HR</h1>
-            <p className="text-gray-600 mb-6">
-              The complete HR suite to help enterprises elevate People, Profit, and Planet.
-            </p>
-            <button className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-              Discover More!
-            </button>
+          <div className="relative p-10 md:w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('/background.jpeg')" }}>
+            <div className="absolute inset-0 bg-blue-50 opacity-15"></div> {/* Optional overlay */}
+            
           </div>
           
           {/* Right Section - Signup Form */}
