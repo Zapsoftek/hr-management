@@ -9,7 +9,7 @@ export default function ForgotPin() {
   return (
     <>
       <Head>
-        <title>HR Login</title>
+        <title>HR Logins</title>
       </Head>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row overflow-hidden max-w-5xl w-full">
